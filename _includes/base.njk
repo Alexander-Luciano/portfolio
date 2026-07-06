@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title | default(site.hero_name + " | Portfolio") }}</title>
+    <meta name="description" content="Portfolio of {{ site.hero_name }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-lines">
+            <div class="grid-line"></div>
+            <div class="grid-line"></div>
+            <div class="grid-line"></div>
+        </div>
+
+        <header class="top-header">
+            <div id="availability-text">{{ site.availability | default('Available') }}</div>
+            <div class="profile-wrap">
+                {% if site.profile_pic %}
+                <a href="/"><img id="profile-pic" src="/{{ site.profile_pic }}" alt="Profile Picture"></a>
+                {% endif %}
+            </div>
+            <div id="location-text">{{ site.location }}</div>
+        </header>
+
+        {{ content | safe }}
+
+        <footer>
+            <p>&copy; 2024 {{ site.hero_name }}. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

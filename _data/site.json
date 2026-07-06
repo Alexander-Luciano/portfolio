@@ -1,0 +1,52 @@
+{
+  "profile_pic": "assets/uploads/profile.png",
+  "hero_name": "Alexander Luciano",
+  "location": "New York, USA",
+  "availability": "Available for new opportunities",
+  "hero_title": "IT Operations Specialist & Automation Engineer",
+  "hero_subtitle": "Bridging the gap between traditional IT infrastructure and modern Artificial Intelligence.",
+  "about_text": "<p>Forward-thinking IT Operations Specialist and Automation Engineer with a proven track record of delivering white-glove executive support and managing massive enterprise hardware lifecycles.</p><p>I possess a personal passion for understanding how society's digital systems operate, their properties, and how they may better function. I uniquely bridge the gap between traditional IT infrastructure and modern Artificial Intelligence by engineering local LLM pipelines, autonomous diagnostic tools, and background automation macros. I leverage edge AI and system-level scripting to eliminate manual bottlenecks, driving operational efficiency and drastically reducing mean time to resolution across the enterprise.</p>",
+  "experience": [
+    {
+      "date": "June 2024 - Present",
+      "title": "IT Operations & Asset Management Specialist",
+      "company": "BNP Paribas CIB",
+      "items": [
+        "Managed IT operations and full hardware lifecycle for 3,000+ users, including weekly provisioning of 100+ new systems.",
+        "Served as the primary escalation point for C-suite executives and senior leadership, resolving complex infrastructure issues with priority SLA response.",
+        "Administered user records and access controls in ServiceNow, conducting quarterly audits to enforce data integrity and compliance with corporate security policies."
+      ]
+    },
+    {
+      "date": "May 2022 - May 2024",
+      "title": "Information Technology Systems Consultant",
+      "company": "JPMorgan Chase & Co.",
+      "items": [
+        "Delivered on-demand, \"white-glove\" technical support to executive leadership and trading floor operations, maintaining uptime for business-critical financial systems.",
+        "Partnered with product and infrastructure teams to deploy and maintain virtual desktops (Citrix VDI), VoIP systems, and proprietary financial trading terminals.",
+        "Analyzed ticket trends to identify recurring failure patterns, then redesigned ServiceNow categorization and routing workflows to reduce mean resolution time."
+      ]
+    },
+    {
+      "date": "2022 - 2024",
+      "title": "Information Technology Consultant",
+      "company": "USEReady",
+      "items": [
+        "Provided rapid-deployment IT services and technical consultation for various corporate clients.",
+        "Deployed, tested, and maintained client computer assets; provided expert consultation for IT infrastructure issues, resolving over 50 break-fix incidents monthly and managing 200+ move-add-change requests with a 98% satisfaction rate."
+      ]
+    }
+  ],
+  "core_competencies": [
+    "AI Agent Orchestration",
+    "Local Edge AI (LLMs)",
+    "Prompt Engineering",
+    "Headless Browser Automation",
+    "VIP/Executive Technical Support",
+    "Virtual Desktops (Citrix VDI)",
+    "Hardware Lifecycle Management",
+    "OS-Level Scripting",
+    "ServiceNow (CMDB)",
+    "Web Project Management"
+  ]
+}

@@ -1,15 +1,15 @@
 backend:
   name: git-gateway
-  branch: main # Branch to update (optional; defaults to main)
+  branch: main
 
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 
 collections:
   - name: "portfolio_data"
-    label: "Portfolio Content"
-    file: "content.json"
-    description: "Manage the main content of your portfolio"
+    label: "Portfolio Settings"
+    file: "_data/site.json"
+    description: "Manage global settings, hero, about, and skills."
     fields:
       - {label: "Profile Picture", name: "profile_pic", widget: "image", required: false}
       - {label: "Hero Name", name: "hero_name", widget: "string"}
@@ -26,15 +26,19 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Company", name: "company", widget: "string"}
           - {label: "Description Items", name: "items", widget: "list", field: {label: "Item", name: "item", widget: "string"}}
-      - label: "Projects"
-        name: "projects"
-        widget: "list"
-        fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Tech Stack", name: "tech", widget: "string"}
-          - {label: "Description", name: "desc", widget: "text"}
-          - {label: "Project Image", name: "image", widget: "image", required: false}
       - label: "Core Competencies"
         name: "core_competencies"
         widget: "list"
         field: {label: "Skill", name: "skill", widget: "string"}
+
+  - name: "projects"
+    label: "Projects"
+    folder: "projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Tech Stack", name: "tech", widget: "string"}
+      - {label: "Description", name: "desc", widget: "text"}
+      - {label: "Project Image", name: "image", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
