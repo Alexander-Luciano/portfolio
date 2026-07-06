@@ -1,0 +1,36 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to main)
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "portfolio_data"
+    label: "Portfolio Content"
+    file: "content.json"
+    description: "Manage the main content of your portfolio"
+    fields:
+      - {label: "Hero Name", name: "hero_name", widget: "string"}
+      - {label: "Hero Title", name: "hero_title", widget: "string"}
+      - {label: "Hero Subtitle", name: "hero_subtitle", widget: "text"}
+      - {label: "About Text", name: "about_text", widget: "markdown"}
+      - label: "Experience"
+        name: "experience"
+        widget: "list"
+        fields:
+          - {label: "Date Range", name: "date", widget: "string"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Company", name: "company", widget: "string"}
+          - {label: "Description Items", name: "items", widget: "list", field: {label: "Item", name: "item", widget: "string"}}
+      - label: "Projects"
+        name: "projects"
+        widget: "list"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Tech Stack", name: "tech", widget: "string"}
+          - {label: "Description", name: "desc", widget: "text"}
+      - label: "Core Competencies"
+        name: "core_competencies"
+        widget: "list"
+        field: {label: "Skill", name: "skill", widget: "string"}

@@ -1,0 +1,66 @@
+{
+  "hero_name": "Alexander Luciano",
+  "hero_title": "IT Operations Specialist & Automation Engineer",
+  "hero_subtitle": "Bridging the gap between traditional IT infrastructure and modern Artificial Intelligence.",
+  "about_text": "<p>Forward-thinking IT Operations Specialist and Automation Engineer with a proven track record of delivering white-glove executive support and managing massive enterprise hardware lifecycles.</p><p>I possess a personal passion for understanding how society's digital systems operate, their properties, and how they may better function. I uniquely bridge the gap between traditional IT infrastructure and modern Artificial Intelligence by engineering local LLM pipelines, autonomous diagnostic tools, and background automation macros. I leverage edge AI and system-level scripting to eliminate manual bottlenecks, driving operational efficiency and drastically reducing mean time to resolution across the enterprise.</p>",
+  "experience": [
+    {
+      "date": "June 2024 - Present",
+      "title": "IT Operations & Asset Management Specialist",
+      "company": "BNP Paribas CIB",
+      "items": [
+        "Managed IT operations and full hardware lifecycle for 3,000+ users, including weekly provisioning of 100+ new systems.",
+        "Served as the primary escalation point for C-suite executives and senior leadership, resolving complex infrastructure issues with priority SLA response.",
+        "Administered user records and access controls in ServiceNow, conducting quarterly audits to enforce data integrity and compliance with corporate security policies."
+      ]
+    },
+    {
+      "date": "May 2022 - May 2024",
+      "title": "Information Technology Systems Consultant",
+      "company": "JPMorgan Chase & Co.",
+      "items": [
+        "Delivered on-demand, \"white-glove\" technical support to executive leadership and trading floor operations, maintaining uptime for business-critical financial systems.",
+        "Partnered with product and infrastructure teams to deploy and maintain virtual desktops (Citrix VDI), VoIP systems, and proprietary financial trading terminals.",
+        "Analyzed ticket trends to identify recurring failure patterns, then redesigned ServiceNow categorization and routing workflows to reduce mean resolution time."
+      ]
+    },
+    {
+      "date": "2022 - 2024",
+      "title": "Information Technology Consultant",
+      "company": "USEReady",
+      "items": [
+        "Provided rapid-deployment IT services and technical consultation for various corporate clients.",
+        "Deployed, tested, and maintained client computer assets; provided expert consultation for IT infrastructure issues, resolving over 50 break-fix incidents monthly and managing 200+ move-add-change requests with a 98% satisfaction rate."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Generative AI Document Intelligence Engine",
+      "tech": "Python, Gemini REST API, JSON, Prompt Engineering",
+      "desc": "Engineered a local Python application that interfaces directly with the Gemini API to autonomously ingest, analyze, and reformat complex text documents. Built modular extraction scripts to compile extensive prompt engineering guides."
+    },
+    {
+      "title": "Automated PDF Export & Layout Reconstruction",
+      "tech": "Python (python-docx), AST Manipulation",
+      "desc": "Programmed a custom export engine that intercepts the base document's Abstract Syntax Tree (AST), ensuring final PDFs retain the exact fonts, margins, and styling. Bypassed strict Windows OS file-locking mechanisms."
+    },
+    {
+      "title": "Hybrid Orchestration & System-Level Automation",
+      "tech": "Playwright, AutoHotkey v2, Binary Patching",
+      "desc": "Developed headless web automation pipelines utilizing Playwright and Chrome DevTools to orchestrate complex data extraction. Authored system-level background macros (AHK v2) featuring real-time tooltip feedback."
+    }
+  ],
+  "core_competencies": [
+    "AI Agent Orchestration",
+    "Local Edge AI (LLMs)",
+    "Prompt Engineering",
+    "Headless Browser Automation",
+    "VIP/Executive Technical Support",
+    "Virtual Desktops (Citrix VDI)",
+    "Hardware Lifecycle Management",
+    "OS-Level Scripting",
+    "ServiceNow (CMDB)",
+    "Web Project Management"
+  ]
+}
