@@ -11,7 +11,10 @@ collections:
     file: "content.json"
     description: "Manage the main content of your portfolio"
     fields:
+      - {label: "Profile Picture", name: "profile_pic", widget: "image", required: false}
       - {label: "Hero Name", name: "hero_name", widget: "string"}
+      - {label: "Location", name: "location", widget: "string", required: false}
+      - {label: "Availability", name: "availability", widget: "string", required: false}
       - {label: "Hero Title", name: "hero_title", widget: "string"}
       - {label: "Hero Subtitle", name: "hero_subtitle", widget: "text"}
       - {label: "About Text", name: "about_text", widget: "markdown"}
@@ -30,6 +33,7 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Tech Stack", name: "tech", widget: "string"}
           - {label: "Description", name: "desc", widget: "text"}
+          - {label: "Project Image", name: "image", widget: "image", required: false}
       - label: "Core Competencies"
         name: "core_competencies"
         widget: "list"

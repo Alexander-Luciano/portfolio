@@ -1,5 +1,8 @@
 {
+  "profile_pic": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop",
   "hero_name": "Alexander Luciano",
+  "location": "New York, USA",
+  "availability": "Available for new opportunities",
   "hero_title": "IT Operations Specialist & Automation Engineer",
   "hero_subtitle": "Bridging the gap between traditional IT infrastructure and modern Artificial Intelligence.",
   "about_text": "<p>Forward-thinking IT Operations Specialist and Automation Engineer with a proven track record of delivering white-glove executive support and managing massive enterprise hardware lifecycles.</p><p>I possess a personal passion for understanding how society's digital systems operate, their properties, and how they may better function. I uniquely bridge the gap between traditional IT infrastructure and modern Artificial Intelligence by engineering local LLM pipelines, autonomous diagnostic tools, and background automation macros. I leverage edge AI and system-level scripting to eliminate manual bottlenecks, driving operational efficiency and drastically reducing mean time to resolution across the enterprise.</p>",
@@ -38,17 +41,20 @@
     {
       "title": "Generative AI Document Intelligence Engine",
       "tech": "Python, Gemini REST API, JSON, Prompt Engineering",
-      "desc": "Engineered a local Python application that interfaces directly with the Gemini API to autonomously ingest, analyze, and reformat complex text documents. Built modular extraction scripts to compile extensive prompt engineering guides."
+      "desc": "Engineered a local Python application that interfaces directly with the Gemini API to autonomously ingest, analyze, and reformat complex text documents. Built modular extraction scripts to compile extensive prompt engineering guides.",
+      "image": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&h=600&fit=crop"
     },
     {
       "title": "Automated PDF Export & Layout Reconstruction",
       "tech": "Python (python-docx), AST Manipulation",
-      "desc": "Programmed a custom export engine that intercepts the base document's Abstract Syntax Tree (AST), ensuring final PDFs retain the exact fonts, margins, and styling. Bypassed strict Windows OS file-locking mechanisms."
+      "desc": "Programmed a custom export engine that intercepts the base document's Abstract Syntax Tree (AST), ensuring final PDFs retain the exact fonts, margins, and styling. Bypassed strict Windows OS file-locking mechanisms.",
+      "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=600&fit=crop"
     },
     {
       "title": "Hybrid Orchestration & System-Level Automation",
       "tech": "Playwright, AutoHotkey v2, Binary Patching",
-      "desc": "Developed headless web automation pipelines utilizing Playwright and Chrome DevTools to orchestrate complex data extraction. Authored system-level background macros (AHK v2) featuring real-time tooltip feedback."
+      "desc": "Developed headless web automation pipelines utilizing Playwright and Chrome DevTools to orchestrate complex data extraction. Authored system-level background macros (AHK v2) featuring real-time tooltip feedback.",
+      "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=600&fit=crop"
     }
   ],
   "core_competencies": [

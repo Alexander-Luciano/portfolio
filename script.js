@@ -1,83 +1,86 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Fetch content.json and populate the UI
+    // Fetch content.json and populate the UI
     fetch('content.json')
         .then(response => response.json())
         .then(data => {
+            // Header
+            if (data.profile_pic) {
+                const img = document.getElementById('profile-pic');
+                img.src = data.profile_pic;
+                img.style.display = 'block';
+            }
+            document.getElementById('availability-text').textContent = data.availability || 'Available';
+            document.getElementById('location-text').textContent = data.location || '';
+
             // Hero Section
             document.getElementById('hero-name').textContent = data.hero_name || '';
-            document.getElementById('hero-title').textContent = data.hero_title || '';
             document.getElementById('hero-subtitle').textContent = data.hero_subtitle || '';
 
             // About Section
             document.getElementById('about-text').innerHTML = data.about_text || '';
 
-            // Experience Section
-            const expContainer = document.getElementById('experience-timeline');
-            if (data.experience && Array.isArray(data.experience)) {
-                expContainer.innerHTML = data.experience.map(exp => `
-                    <div class="timeline-item glass-card">
-                        <div class="timeline-date">${exp.date || ''}</div>
-                        <h3 class="timeline-title">${exp.title || ''}</h3>
-                        <h4 class="timeline-company">${exp.company || ''}</h4>
-                        <ul class="timeline-list">
-                            ${(exp.items || []).map(item => `<li>${item}</li>`).join('')}
-                        </ul>
+            // Projects Section
+            const projContainer = document.getElementById('projects-container');
+            if (data.projects && Array.isArray(data.projects)) {
+                projContainer.innerHTML = data.projects.map(proj => `
+                    <div class="project-row">
+                        <div class="project-info">
+                            <h3 class="project-title">${proj.title || ''}</h3>
+                            <div class="project-tech">${proj.tech || ''}</div>
+                            <p class="project-desc">${proj.desc || ''}</p>
+                        </div>
+                        <div class="project-image">
+                            ${proj.image ? `<img src="${proj.image}" alt="${proj.title}">` : '<div style="padding: 4rem; text-align: center; color: #555;">No Image</div>'}
+                        </div>
                     </div>
                 `).join('');
             }
 
-            // Projects Section
-            const projContainer = document.getElementById('projects-grid');
-            if (data.projects && Array.isArray(data.projects)) {
-                projContainer.innerHTML = data.projects.map(proj => `
-                    <div class="project-card glass-card">
-                        <h3 class="project-title">${proj.title || ''}</h3>
-                        <p class="project-tech">${proj.tech || ''}</p>
-                        <p class="project-desc">${proj.desc || ''}</p>
+            // Experience Section
+            const expContainer = document.getElementById('experience-container');
+            if (data.experience && Array.isArray(data.experience)) {
+                expContainer.innerHTML = data.experience.map(exp => `
+                    <div class="exp-item">
+                        <div class="exp-date">${exp.date || ''}</div>
+                        <div class="exp-content">
+                            <h3 class="exp-title">${exp.title || ''}</h3>
+                            <h4 class="exp-company">${exp.company || ''}</h4>
+                            <ul>
+                                ${(exp.items || []).map(item => `<li>${item}</li>`).join('')}
+                            </ul>
+                        </div>
                     </div>
                 `).join('');
             }
 
             // Skills Section
-            const skillsContainer = document.getElementById('core-competencies');
+            const skillsContainer = document.getElementById('skills-container');
             if (data.core_competencies && Array.isArray(data.core_competencies)) {
                 skillsContainer.innerHTML = data.core_competencies.map(skill => `
-                    <span class="tag">${skill}</span>
+                    <div class="skill-tag">${skill}</div>
                 `).join('');
             }
-
-            // Re-trigger reveal animation logic for new dynamic content
-            revealOnScroll();
         })
         .catch(error => console.error("Error loading content:", error));
 
-    // 2. Scroll Reveal Animation
-    const reveals = document.querySelectorAll('.reveal');
+    // Nav active state based on scroll
+    const sections = document.querySelectorAll('.section');
+    const navItems = document.querySelectorAll('.nav-item');
 
-    const revealOnScroll = () => {
-        const windowHeight = window.innerHeight;
-        const elementVisible = 100;
-
-        reveals.forEach(reveal => {
-            const elementTop = reveal.getBoundingClientRect().top;
-            if (elementTop < windowHeight - elementVisible) {
-                reveal.classList.add('active');
+    window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            if (scrollY >= sectionTop - 150) {
+                current = section.getAttribute('id');
             }
         });
-    };
 
-    window.addEventListener('scroll', revealOnScroll);
-    revealOnScroll(); // Trigger on load
-
-    // 3. Sticky Nav Styling on Scroll
-    const nav = document.querySelector('.glass-nav');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            nav.style.padding = '0.5rem 0';
-            nav.style.background = 'rgba(5, 5, 5, 0.85)';
-        } else {
-            nav.style.padding = '0';
-            nav.style.background = 'rgba(5, 5, 5, 0.6)';
-        }
+        navItems.forEach(item => {
+            item.classList.remove('active');
+            if (item.getAttribute('href') === `#${current}`) {
+                item.classList.add('active');
+            }
+        });
     });
 });
