@@ -343,6 +343,166 @@ footer {
     font-size: 0.9rem;
 }
 
+/* Project Deep Dive Pages */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project-deep-dive {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.project-header-wrap {
+    text-align: center;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+/* Subtle glow behind title */
+.project-header-wrap::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(16,185,129,0.1) 0%, rgba(10,10,10,0) 70%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.project-tech-wrap {
+    margin-bottom: 1.5rem;
+}
+
+.tech-pill {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 30px;
+    color: var(--text-secondary);
+    background: rgba(255,255,255,0.03);
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    backdrop-filter: blur(5px);
+}
+
+.project-hero-image-wrap {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.project-hero-image-wrap:hover {
+    transform: scale(1.02);
+    border-color: rgba(16,185,129,0.3);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+.project-hero-image-wrap img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: all 0.5s ease;
+    filter: brightness(0.85) contrast(1.1);
+}
+
+.project-hero-image-wrap:hover img {
+    filter: brightness(1) contrast(1);
+}
+
+/* Markdown Content Styling */
+.project-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    font-size: 1.15rem;
+}
+
+.project-content h2 {
+    font-size: 2.2rem;
+    color: var(--text-primary);
+    margin-top: 4.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+}
+
+.project-content h2::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 60px;
+    height: 1px;
+    background-color: var(--accent);
+}
+
+.project-content h3 {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-content p {
+    margin-bottom: 1.75rem;
+}
+
+.project-content ul {
+    margin-bottom: 2.5rem;
+    padding-left: 1.5rem;
+    list-style-type: none;
+}
+
+.project-content li {
+    margin-bottom: 0.75rem;
+    position: relative;
+}
+
+.project-content li::before {
+    content: '■';
+    color: var(--accent);
+    position: absolute;
+    left: -1.5rem;
+    font-size: 0.7rem;
+    top: 0.45rem;
+}
+
+.project-content strong, .project-content b {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.project-content blockquote {
+    border-left: 3px solid var(--accent);
+    background: rgba(255, 255, 255, 0.03);
+    padding: 1.5rem;
+    margin: 2.5rem 0;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+}
+
+.project-content blockquote p:last-child {
+    margin-bottom: 0;
+}
+
 /* Responsive */
 @media (max-width: 900px) {
     .hero-bottom {
