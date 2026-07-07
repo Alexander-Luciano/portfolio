@@ -3,6 +3,7 @@ title: "Hybrid Orchestration & System-Level Automation"
 tech: "Playwright, AutoHotkey v2, Binary Patching"
 desc: "Developed headless web automation pipelines utilizing Playwright and Chrome DevTools to orchestrate complex data extraction. Authored system-level background macros (AHK v2) featuring real-time tooltip feedback."
 image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=600&fit=crop"
+tags: projects
 ---
 ## The Challenge
 Modern enterprise environments are often highly fragmented. Business-critical workflows frequently span across legacy desktop applications, strict operating system file locks, and dynamic web portals. Traditional automation tools typically fail at the boundary between the browser and the desktop OS. 

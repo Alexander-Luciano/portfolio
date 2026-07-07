@@ -3,6 +3,7 @@ title: "Automated PDF Export & Layout Reconstruction"
 tech: "Python (python-docx), AST Manipulation, COM Interop"
 desc: "Programmed a custom export engine that intercepts the base document's Abstract Syntax Tree (AST), ensuring final PDFs retain the exact fonts, margins, and styling. Bypassed strict Windows OS file-locking mechanisms."
 image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=600&fit=crop"
+tags: projects
 ---
 ## The Challenge
 Converting programmatic output into highly stylized, pixel-perfect PDF documents is notoriously difficult. Standard HTML-to-PDF converters or basic Word automation scripts frequently destroy complex typography, alter margin spacing, and fail to render custom corporate branding properly. Additionally, doing this in an enterprise environment often triggers aggressive Windows OS file-locking mechanisms, causing silent script failures.

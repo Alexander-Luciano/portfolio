@@ -3,6 +3,7 @@ title: "Generative AI Document Intelligence Engine"
 tech: "Python, Gemini REST API, JSON, Prompt Engineering"
 desc: "Engineered a local Python application that interfaces directly with the Gemini API to autonomously ingest, analyze, and reformat complex text documents. Built modular extraction scripts to compile extensive prompt engineering guides."
 image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&h=600&fit=crop"
+tags: projects
 ---
 ## The Problem
 Processing unstructured, dense textual data at scale is a classic bottleneck in data engineering. Traditional NLP libraries or regex-based scraping often fail when confronting highly variable formatting or when the extraction requires contextual reasoning rather than simple pattern matching.
