@@ -5,6 +5,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets");
 
   return {
+    pathPrefix: "/portfolio/",
     dir: {
       input: ".",
       output: "_site",

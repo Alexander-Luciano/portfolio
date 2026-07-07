@@ -6,8 +6,8 @@
     <title>{{ title | default(site.hero_name + " | Portfolio") }}</title>
     <meta name="description" content="Portfolio of {{ site.hero_name }}">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles.css">
-    <script src="/script.js" defer></script>
+    <link rel="stylesheet" href="{{ '/styles.css' | url }}">
+    <script src="{{ '/script.js' | url }}" defer></script>
 </head>
 <body>
     <div class="grid-container">
@@ -21,7 +21,7 @@
             <div id="availability-text">{{ site.availability | default('Available') }}</div>
             <div class="profile-wrap">
                 {% if site.profile_pic %}
-                <a href="/"><img id="profile-pic" src="/{{ site.profile_pic }}" alt="Profile Picture"></a>
+                <a href="{{ '/' | url }}"><img id="profile-pic" src="{{ '/' | url }}{{ site.profile_pic }}" alt="Profile Picture"></a>
                 {% endif %}
             </div>
             <div id="location-text">{{ site.location }}</div>

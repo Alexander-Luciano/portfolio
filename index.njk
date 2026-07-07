@@ -18,19 +18,19 @@ layout: base.njk
 </section>
 
 <nav class="main-nav">
-    <a href="#projects" class="nav-item">
+    <a href="{{ '/#projects' | url }}" class="nav-item">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
         Work
     </a>
-    <a href="#about" class="nav-item">
+    <a href="{{ '/#about' | url }}" class="nav-item">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
         About
     </a>
-    <a href="#experience" class="nav-item">
+    <a href="{{ '/#experience' | url }}" class="nav-item">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
         Experience
     </a>
-    <a href="#skills" class="nav-item">
+    <a href="{{ '/#skills' | url }}" class="nav-item">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
         Skills
     </a>
@@ -43,14 +43,14 @@ layout: base.njk
             {% for proj in collections.projects %}
             <div class="project-row">
                 <div class="project-info">
-                    <h3 class="project-title"><a href="{{ proj.url }}" style="color: inherit; text-decoration: none;">{{ proj.data.title }}</a></h3>
+                    <h3 class="project-title"><a href="{{ proj.url | url }}" style="color: inherit; text-decoration: none;">{{ proj.data.title }}</a></h3>
                     <div class="project-tech">{{ proj.data.tech }}</div>
                     <p class="project-desc">{{ proj.data.desc }}</p>
-                    <a href="{{ proj.url }}" class="btn btn-dark" style="margin-top: 1rem;">View Details</a>
+                    <a href="{{ proj.url | url }}" class="btn btn-dark" style="margin-top: 1rem;">View Details</a>
                 </div>
                 <div class="project-image">
                     {% if proj.data.image %}
-                    <a href="{{ proj.url }}"><img src="{{ proj.data.image }}" alt="{{ proj.data.title }}"></a>
+                    <a href="{{ proj.url | url }}"><img src="{{ proj.data.image | url }}" alt="{{ proj.data.title }}"></a>
                     {% else %}
                     <div style="padding: 4rem; text-align: center; color: #555;">No Image</div>
                     {% endif %}
