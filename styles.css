@@ -3,9 +3,9 @@
     --bg-surface: #121212;
     --grid-line: rgba(255, 255, 255, 0.05);
     --text-primary: #ffffff;
-    --text-secondary: #888888;
-    --accent: #FF8C00;
-    --accent-hover: #e67e00;
+    --text-secondary: #b0b0b0;
+    --accent: #10B981;
+    --accent-hover: #059669;
     --border: rgba(255, 255, 255, 0.1);
 }
 
@@ -19,8 +19,14 @@ body {
     background-color: var(--bg-base);
     color: var(--text-primary);
     font-family: 'Inter', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 300;
     line-height: 1.6;
     overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
 }
 
 /* Noise overlay */
@@ -200,6 +206,11 @@ body::before {
 .section {
     padding: 6rem 4rem;
     border-bottom: 1px solid var(--grid-line);
+}
+
+#about {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 }
 
 .section-title {
