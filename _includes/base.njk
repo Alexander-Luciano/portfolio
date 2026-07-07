@@ -30,7 +30,19 @@
         {{ content | safe }}
 
         <footer>
-            <p>&copy; 2024 {{ site.hero_name }}. All rights reserved.</p>
+            <div class="footer-content" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+                <p>&copy; <span id="current-year">2024</span> {{ site.hero_name }}. All rights reserved.</p>
+                <p id="live-datetime" style="font-family: monospace; font-size: 0.9rem; color: var(--text-secondary);"></p>
+            </div>
+            <script>
+                function updateDateTime() {
+                    const now = new Date();
+                    document.getElementById('current-year').textContent = now.getFullYear();
+                    document.getElementById('live-datetime').textContent = now.toLocaleString();
+                }
+                updateDateTime();
+                setInterval(updateDateTime, 1000);
+            </script>
         </footer>
     </div>
 </body>
