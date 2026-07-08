@@ -1,4 +1,5 @@
 ---
+layout: project.njk
 title: "Generative AI Document Intelligence Engine"
 tech: "Python, Gemini REST API, JSON, Prompt Engineering"
 desc: "Engineered a local Python application that interfaces directly with the Gemini API to autonomously ingest, analyze, and reformat complex text documents. Built modular extraction scripts to compile extensive prompt engineering guides."

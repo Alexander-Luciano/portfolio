@@ -1,4 +1,5 @@
 ---
+layout: project.njk
 title: "Intelligent Headless Automation Engine"
 tech: "Python, Playwright, Llama 3.2, DOM Traversal"
 desc: "An analytical evaluation of combining deterministic headless browser automation (Playwright) with probabilistic language models (Llama 3.2) for mass data extraction and intelligent form processing."

@@ -1,4 +1,5 @@
 ---
+layout: project.njk
 title: "Low-Latency Voice Automation Pipeline"
 tech: "Python, Nvidia Parakeet, CUDA, Hardware Hooks"
 desc: "A scientific analysis of a GPU-accelerated dictation pipeline utilizing Nvidia Parakeet for low-latency inference, coupled with system-wide hardware interrupts for seamless data injection."

@@ -1,4 +1,5 @@
 ---
+layout: project.njk
 title: "Hybrid Orchestration & System-Level Automation"
 tech: "Playwright, AutoHotkey v2, Binary Patching"
 desc: "Developed headless web automation pipelines utilizing Playwright and Chrome DevTools to orchestrate complex data extraction. Authored system-level background macros (AHK v2) featuring real-time tooltip feedback."

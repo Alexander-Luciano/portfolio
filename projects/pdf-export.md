@@ -1,4 +1,5 @@
 ---
+layout: project.njk
 title: "Automated PDF Export & Layout Reconstruction"
 tech: "Python (python-docx), AST Manipulation, COM Interop"
 desc: "Programmed a custom export engine that intercepts the base document's Abstract Syntax Tree (AST), ensuring final PDFs retain the exact fonts, margins, and styling. Bypassed strict Windows OS file-locking mechanisms."

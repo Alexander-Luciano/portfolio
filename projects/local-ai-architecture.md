@@ -1,4 +1,5 @@
 ---
+layout: project.njk
 title: "Offline Multi-Agent Systems: Antigravity Architecture"
 tech: "Python, LiteRT-LM, Edge AI, Autonomous Watchdogs"
 desc: "An architectural analysis of an offline, multi-agent AI system designed to automate repetitive technical workflows. Features an intelligent watchdog ('LLM-Buddy') for real-time remediation loops and local edge deployment."
