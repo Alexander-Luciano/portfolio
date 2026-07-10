@@ -6,6 +6,7 @@
     --text-secondary: #b0b0b0;
     --accent: #10B981;
     --accent-hover: #059669;
+    --accent-secondary: #3B82F6;
     --border: rgba(255, 255, 255, 0.1);
 }
 
@@ -17,8 +18,9 @@
 
 body {
     background-color: var(--bg-base);
+    background-image: radial-gradient(circle at top, rgba(59, 130, 246, 0.05), transparent 60%);
     color: var(--text-primary);
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.05rem;
     font-weight: 300;
     line-height: 1.6;
@@ -26,7 +28,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
 }
 
 /* Noise overlay */
@@ -146,11 +149,15 @@ body::before {
 
 .btn-dark {
     background-color: var(--bg-surface);
+    background-image: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(59, 130, 246, 0.1));
     color: var(--text-primary);
     border: 1px solid var(--border);
 }
 
 .btn-dark:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+    border-color: rgba(255,255,255,0.2);
     background-color: #222;
 }
 
@@ -177,7 +184,7 @@ body::before {
 .nav-item {
     flex: 1;
     text-align: center;
-    padding: 1.5rem;
+    padding: 1rem;
     border-right: 1px solid var(--grid-line);
     text-decoration: none;
     color: var(--text-secondary);
@@ -186,7 +193,7 @@ body::before {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    transition: all 0.3s;
+    transition: all 0.3s ease;
 }
 
 .nav-item:last-child {
@@ -195,6 +202,8 @@ body::before {
 
 .nav-item:hover, .nav-item.active {
     color: var(--accent);
+    background: rgba(59, 130, 246, 0.05);
+    transform: translateY(-2px);
 }
 
 .nav-item svg {
@@ -204,7 +213,7 @@ body::before {
 
 /* Sections */
 .section {
-    padding: 6rem 4rem;
+    padding: 8rem 4rem;
     border-bottom: 1px solid var(--grid-line);
 }
 
@@ -282,7 +291,7 @@ body::before {
 .exp-item {
     display: flex;
     border-top: 1px solid var(--border);
-    padding: 3rem 0;
+    padding: 4rem 0;
 }
 
 .exp-date {
