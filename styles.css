@@ -1,46 +1,43 @@
 /* General Styles */
 body {
-  background-color: #002b5c; /* Dark blue background */
-  color: #ffffff; /* White text color */
-  font-family: 'Arial', sans-serif; /* Clean and readable font */
-  margin: 0;
-  padding: 0;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  background-color: #002b5c;
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 /* Icons */
 .icon {
-  display: inline-block;
-  margin: 20px 10px; /* Adjusted spacing */
-  width: 100px;
-  height: 100px;
-  background-color: #0066cc; /* Blue background */
+  width: 50px;
+  height: 50px;
+  background-color: #0066cc;
   border-radius: 50%;
-  text-align: center;
-  line-height: 100px;
-  font-size: 50px; /* Adjusted font size */
-  color: #ffffff; /* White text color */
+  display: inline-block;
+  margin: 1rem;
 }
 
 /* Images */
 .image {
-  display: block;
-  margin: 20px 0; /* Adjusted spacing */
   width: 100%;
   height: auto;
+  margin-bottom: 1rem;
 }
 
-/* Typography */
-h1, h2, h3, p {
-  color: #ffffff; /* White text color */
-  font-weight: normal; /* Adjusted font weight */
-}
-
-/* Responsive Styles */
+/* Responsive Design */
 @media (max-width: 768px) {
   .icon {
-    width: 80px;
-    height: 80px;
-    font-size: 30px;
+    width: 40px;
+    height: 40px;
   }
   .image {
     width: 100%;
