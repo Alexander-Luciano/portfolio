@@ -1,46 +1,87 @@
 /* General Styles */
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #002b5c;
-  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
+  background: linear-gradient(180deg, #002b5c, #071021);
+  color: #fff;
 }
 
-/* Navigation */
-.navbar {
-  background-color: #002b5c;
-  padding: 10px;
-  text-align: center;
+/* Header */
+header {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.navbar a {
-  color: #ffffff;
-  text-decoration: none;
-  padding: 10px;
+header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
-.navbar a:hover {
-  background-color: #0055cc;
+header h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+header p {
+  font-size: 14px;
+  color: #888;
 }
 
 /* Main Content */
-.main-content {
+main {
   padding: 20px;
+}
+
+main h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+main p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+main img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  background: #071021;
+  padding: 20px 0;
   text-align: center;
 }
 
-/* Section Spacing */
-.section {
-  margin-bottom: 50px;
+footer p {
+  font-size: 14px;
+  color: #888;
 }
 
-/* Responsive Styles */
+/* Responsive Design */
 @media (max-width: 768px) {
-  .navbar {
-    padding: 5px;
+  header img {
+    width: 40px;
+    height: 40px;
   }
-  .main-content {
-    padding: 10px;
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  main h2 {
+    font-size: 24px;
+  }
+
+  main p {
+    font-size: 14px;
   }
 }
