@@ -1,71 +1,122 @@
 /* General Styles */
 body {
+  font-family: 'Arial', sans-serif;
   background-color: #002b5c;
   color: #ffffff;
-  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/* Icons */
-.icons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.icon {
-  width: 100px;
-  height: 100px;
-  background-color: #0066cc;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 40px;
-  font-weight: bold;
-  color: #ffffff;
-  transition: background-color 0.3s ease;
-}
-
-.icon:hover {
-  background-color: #003366;
-}
-
-/* Content */
-.content {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+/* Header Section */
+.header {
+  background-color: #002b5c;
   padding: 20px;
+  text-align: center;
 }
 
-.content h2 {
+.header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.header h1 {
   font-size: 24px;
-  font-weight: bold;
-  color: #ffffff;
   margin: 0;
 }
 
-.content p {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #ffffff;
+/* Section 1: Blue Squares */
+.section1 {
+  background-color: #002b5c;
+  padding: 20px;
+  text-align: center;
 }
 
-/* Responsive Design */
+.section1 h2 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.section1 .square {
+  width: 100px;
+  height: 100px;
+  background-color: #002b5c;
+  margin: 10px;
+  display: inline-block;
+}
+
+.section1 .square.blue {
+  background-color: #002b5c;
+}
+
+.section1 .square.red {
+  background-color: #ff0000;
+}
+
+.section1 .square.green {
+  background-color: #00ff00;
+}
+
+/* Section 2: Blue Arrows */
+.section2 {
+  background-color: #002b5c;
+  padding: 20px;
+  text-align: center;
+}
+
+.section2 h2 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.section2 .arrow {
+  width: 100px;
+  height: 100px;
+  background-color: #002b5c;
+  margin: 10px;
+  display: inline-block;
+}
+
+.section2 .arrow.blue {
+  background-color: #002b5c;
+}
+
+.section2 .arrow.red {
+  background-color: #ff0000;
+}
+
+.section2 .arrow.green {
+  background-color: #00ff00;
+}
+
+/* Section 3: Images */
+.section3 {
+  background-color: #002b5c;
+  padding: 20px;
+  text-align: center;
+}
+
+.section3 h2 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.section3 img {
+  width: 100%;
+  height: auto;
+  margin: 10px;
+}
+
+/* Media Queries */
 @media (max-width: 768px) {
-  .icons {
-    flex-direction: column;
-  }
-
-  .icon {
-    width: 80px;
-    height: 80px;
-  }
-
-  .content {
+  .section1, .section2, .section3 {
     padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section1, .section2, .section3 {
+    padding: 5px;
   }
 }
