@@ -1,32 +1,59 @@
 /* General Styles */
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #002b36; /* Dark blue background */
-  color: #ffffff; /* White text color */
+  font-family: Arial, sans-serif;
+  background-color: #002b5c;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 
+/* Icons */
+.icon {
+  width: 50px;
+  height: 50px;
+  margin: 10px 0;
+  background-color: #0066cc;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.icon.blue {
+  background-color: #0066cc;
+}
+
+.icon.red {
+  background-color: #cc0000;
+}
+
+.icon.green {
+  background-color: #00cc00;
+}
+
+/* Section Headers */
 h1, h2, h3 {
-  font-size: 24px; /* Increased font size for headings */
+  color: #ffffff;
+  font-weight: bold;
+  margin: 20px 0;
 }
 
+/* Section Content */
 p {
-  font-size: 16px; /* Font size for body text */
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 10px 0;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  img {
-    max-width: 100%;
-    height: auto;
+  .icon {
+    width: 30px;
+    height: 30px;
   }
 }
 
-/* Dynamic Gradients */
-body {
-  background: linear-gradient(135deg, #002b36, #004d75); /* Dynamic gradient */
-}
-
-/* Customized Spacing */
-img {
-  margin-bottom: 20px; /* Consistent spacing between images and text */
+@media (max-width: 480px) {
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
 }
