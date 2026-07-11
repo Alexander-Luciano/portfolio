@@ -1,49 +1,61 @@
 /* General Styles */
 body {
-  font-family: 'Arial', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #fff;
-  background-color: #002b5c;
+  background-color: #002b5c; /* Dark blue background */
+  color: #ffffff; /* White text color */
+  font-family: 'Roboto', sans-serif; /* Default font */
+  margin: 0;
+  padding: 0;
 }
 
-/* Header */
-header {
-  background: linear-gradient(45deg, #002b5c, #000);
-  padding: 20px;
-  text-align: center;
-}
-
-header img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
-
-/* Content Blocks */
-.content-block {
+/* Icons */
+.icons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  margin: 20px;
-  background: rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  margin-bottom: 50px; /* Add spacing between icons and images */
 }
 
-.content-block img {
-  width: 100%;
-  height: auto;
+.icon {
+  width: 100px;
+  height: 100px;
+  background-color: #0066cc; /* Blue background color */
   border-radius: 5px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon.gradient {
+  background: linear-gradient(135deg, #0066cc 0%, #0066cc 100%);
 }
 
 /* Typography */
-h1, h2, h3 {
+h1 {
+  font-size: 24px;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
-/* Responsive Styles */
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-  .content-block {
-    margin: 10px;
+  .icons {
+    flex-direction: column;
+  }
+
+  .icon {
+    width: 80px;
+    height: 80px;
   }
 }
