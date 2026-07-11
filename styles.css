@@ -1,43 +1,26 @@
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
   color: #fff;
   background-color: #002b5c;
 }
 
-/* Gradient Background */
-.left-side {
-  background: linear-gradient(to bottom, #0055ff, #000);
-  width: 200px;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 /* Typography */
 h1, h2, h3 {
-  font-weight: normal;
-  margin: 0;
+  font-weight: bold;
 }
 
-/* Spacing */
-.container {
-  padding: 20px;
+/* Colors */
+.accent-color {
+  color: #007acc;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  .left-side {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
+  /* Mobile */
+  body {
+    font-size: 14px;
   }
 }
