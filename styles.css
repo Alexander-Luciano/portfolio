@@ -1,41 +1,67 @@
 /* General Styles */
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #002b5c;
-  color: #ffffff;
   margin: 0;
   padding: 0;
+  background-color: #002b5c;
 }
 
-/* Typography */
-h1, h2, h3 {
-  font-family: 'Georgia', serif;
-  font-weight: normal;
-  margin: 0 0 1rem;
+/* Grid Styles */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.grid-item {
+  background-color: #007acc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Typography Styles */
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 20px;
 }
 
 p {
-  font-family: 'Arial', sans-serif;
-  font-weight: normal;
-  line-height: 1.6;
-  margin: 0 0 1rem;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.5;
 }
 
-/* Gradient Background */
-body {
-  background: linear-gradient(135deg, #002b5c, #00557f);
-}
-
-/* Spacing */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-}
-
-/* Responsive Design */
+/* Responsive Styles */
 @media (max-width: 768px) {
-  .container {
-    padding: 1rem;
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
   }
+  .grid-item {
+    padding: 15px;
+    font-size: 16px;
+  }
+}
+
+/* Light Mode */
+.light-mode {
+  background-color: #ffffff;
+  color: #002b5c;
+}
+
+.light-mode .grid-item {
+  background-color: #007acc;
+}
+
+.light-mode h1 {
+  color: #002b5c;
+}
+
+.light-mode p {
+  color: #002b5c;
 }
